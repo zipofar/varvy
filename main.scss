@@ -1,0 +1,24 @@
+$card-border-radius: 0rem;
+$btn-border-radius: 0rem;
+
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+.card {
+  margin-bottom: 25px;
+}
+
+.card-header {
+  color: white;
+  font-size: 125%;
+  padding: 0.25rem 1.25rem;
+}
+
+.card-header-primary {
+  background-color: #2196F3;
+}
+.card-header-success {
+  background-color: #4CAF50;
+}
+.card-header-danger {
+  background-color: #FFC107;
+}
