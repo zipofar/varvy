@@ -7,6 +7,25 @@ $font-family-base:              'v', sans-serif;
 
 @import "./node_modules/bootstrap/scss/bootstrap";
 
+@media (max-width: map-get($grid-breakpoints, "md")) {
+  .img-header-right {
+    display: none;
+  }
+  .ads {
+    display: none;
+  }
+}
+
+@keyframes right {
+  0% {transform: translateX(300px)}
+  100% {transform: translateX(0px)}
+}
+
+.anim-right {
+  animation-name: right;
+  animation-duration: 0.5s;
+}
+
 a {
   text-decoration: underline;
   color: #0d47a1;
@@ -18,6 +37,15 @@ a {
 
 .card h5 a {
   font-size: 130%;
+}
+
+.img-header-right {
+  font-size: $h1-font-size;
+  padding-top: 2em;
+}
+
+.img-header-right img {
+  width: 100%;
 }
 
 .h1-header {
