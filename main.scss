@@ -5,6 +5,7 @@ $input-btn-padding-y:           0.4rem;
 $input-btn-padding-x:           1rem;
 $font-family-base:              'v', sans-serif;
 $light:                         #fff;
+$warning:                       #FF6F00;
 
 @import "./node_modules/bootstrap/scss/bootstrap";
 
@@ -66,18 +67,56 @@ a {
   margin-bottom: 25px;
 }
 
+.card-primary > .card-header {
+  background-color: #2196F3;
+}
+
+.card-success > .card-header {
+  background-color: #4CAF50;
+}
+
+.card-fail > .card-header {
+  background-color: #FFC107;
+}
+
 .card-header {
   color: white;
   font-size: 125%;
   padding: 0.25rem 1.25rem;
 }
 
-.card-header-primary {
-  background-color: #2196F3;
+.card-header > img {
+  height: 1.2em;
 }
-.card-header-success {
-  background-color: #4CAF50;
+
+.card .list {
+  line-height: .5em;
 }
-.card-header-danger {
-  background-color: #FFC107;
+
+.card .list-notes {
+  line-height: 1.5em;
+}
+
+#resources_imgs img {
+  width: 100%;
+}
+
+.scroll-block {
+  margin-top: 25px;
+  max-height: 250px;
+  background-color: #f5f5f5;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.resource-block {
+  padding: 15px 7px 15px 15px;
+}
+
+.resource-block img {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
 }
