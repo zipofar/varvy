@@ -1,0 +1,66 @@
+@import "variables";
+
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+@media (max-width: map-get($grid-breakpoints, "md")) {
+  .img-header-right {
+    display: none;
+  }
+  .ads {
+    display: none;
+  }
+}
+
+@import "card";
+@import "nav";
+@import "form";
+
+@keyframes right {
+  0% {transform: translateX(300px)}
+  100% {transform: translateX(0px)}
+}
+
+.anim-right {
+  animation-name: right;
+  animation-duration: 0.5s;
+}
+
+a {
+  text-decoration: underline;
+  color: #0d47a1;
+}
+
+.img-header-right {
+  font-size: $h1-font-size;
+  padding-top: 2em;
+}
+
+
+.img-header-right img {
+  width: 100%;
+}
+
+.h1-header {
+  padding-top: 2em;
+}
+
+.under-search {
+  font-size: 70%;
+}
+
+
+.card-header > img {
+  height: 1.2em;
+}
+
+.card .list {
+  line-height: .5em;
+}
+
+.card .list-notes {
+  line-height: 1.5em;
+}
+
+#resources_imgs img {
+  width: 100%;
+}

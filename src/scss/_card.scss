@@ -1,0 +1,130 @@
+.card {
+    margin-bottom: 25px;
+    .total-h1 {
+        font: {
+            weight: bold;
+            size: 150%;
+        }
+    }
+    .total-h2 {
+        font: {
+            weight: bold;
+            size: 100%;
+        }
+    }
+    .total-p {
+        font: {
+            size: 100%;
+        }
+    }
+
+    .scroll-block {
+        background-color: #f5f5f5;
+        max-height: 250px;
+        overflow: auto;
+    }
+    .scroll-block-img {
+        @extend .scroll-block;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .resource-block {
+            padding: 15px 7px 15px 15px;
+            .r-block-img {
+                width: 50px;
+                height: 50px;
+                margin-top: 10px;
+                display: block;
+            }
+            .r-block-img-m {
+                @extend .r-block-img;
+                background-image: url("../img/css_block_medium.png");
+            }
+            .r-block-img-s {
+                @extend .r-block-img;
+                background-image: url("../img/css_block_small.png");
+            }
+        }
+    }
+
+    .scroll-block-text {
+        @extend .scroll-block;
+        p {
+            color: #444;
+            font-family: monospace;
+            padding: .5em;
+            font-size: 110%;
+            word-wrap: break-word;
+        }
+    }
+}
+  
+.card-primary {
+    .card-header {
+    background-color: $card-header-color-primary;
+    }
+}
+
+.card-success {
+    .card-header {
+    background-color: $card-header-color-success;
+    }
+}
+
+.card-warning {
+    .card-header {
+    background-color: $card-header-color-warning;
+    }
+}
+
+.card-header {
+    color: white;
+    font-size: 125%;
+    padding: 0.25rem 1.25rem;
+}
+
+.summary {
+    .list-header {
+        font: {
+            weight: bold;
+            size: smaller;
+        }
+        color: #404040;
+        margin: 1em 0em;
+    }
+    .list-body {
+        line-height: 1;
+        list-style-type: none;
+        padding-left: 1.3em;
+        .success {
+            list-style-image: url("../img/check_ok.png");
+        }
+        .warning {
+            list-style-image: url("../img/check_brick.png");
+        }
+    }
+}
+
+.resource {
+    .list-header {
+        font: {
+            weight: bold;
+            size: smaller;
+        }
+        color: #404040;
+        margin: 1em 0em;
+    }
+    .list-body {
+        line-height: 1.5;
+        list-style-type: none;
+        padding-left: 1.3em;
+        .success {
+            list-style-image: url("../img/check_ok.png");
+            color: #4CAF50;
+        }
+        .warning {
+            list-style-image: url("../img/check_brick.png");
+            color: #FF6F00;
+        }
+    }
+}

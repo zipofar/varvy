@@ -13,16 +13,16 @@
         }
     </style>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../dist/css/app.css">
 
-    <title>Hello, world!</title>
+    <title>Pagespeed</title>
 </head>
 <body>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand navbar-light bg-light">
         <a class="navbar-brand" href="#">
-            <img src="images/varvi_logo.png" width="30" height="30" alt="">
+            <img src="../dist/img/varvi_logo.png" width="30" height="30" alt="">
         </a>
         <div class="navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav">
@@ -63,33 +63,37 @@
 
             <!--Summary-->
             <div class="col-md-4">
-                <div class="card card-primary">
+                <div class="card card-primary summary">
                     <div class="card-header">Summary</div>
                     <div class="card-body">
-                        <p><small><strong>Server:</strong></small></p>
-                        <p class="list">
-                            <img class="mr-2" src="images/check_ok.png">Quick server response time<br>
-                            <img class="mr-2" src="images/check_ok.png">Compression enabled<br>
-                            <img class="mr-2" src="images/check_brick.png">Browser caching disaabled<br>
-                            <img class="mr-2" src="images/check_ok.png">Keep-alive enabled<br>
-                            <img class="mr-2" src="images/check_ok.png">Minimal redirects<br>
-                        </p>
-                        <p><small><strong>Page:</strong></small></p>
-                        <p class="list">
-                            <img class="mr-2" src="images/check_ok.png">No bad requests<br>
-                            <img class="mr-2" src="images/check_ok.png">HTML minified<br>
-                            <img class="mr-2" src="images/check_ok.png">Request size is fine<br>
-                            <img class="mr-2" src="images/check_ok.png">Visible content prioritized<br>
-                            <img class="mr-2" src="images/check_ok.png">No render blocking CSS / JS<br>
-                        </p>
-                        <p><small><strong>Resources:</strong></small></p>
-                        <p class="list">
-                            <img class="mr-2" src="images/check_ok.png">Images optimized<br>
-                            <img class="mr-2" src="images/check_ok.png">Javascripts seem async<br>
-                            <img class="mr-2" src="images/check_ok.png">CSS minified<br>
-                            <img class="mr-2" src="images/check_ok.png">No @import CSS<br>
-                            <img class="mr-2" src="images/check_ok.png">JS minified<br>
-                        </p>
+
+                        <p class="list-header">Server:</p>
+                        <ul class="list-body">
+                            <li class="success">Quick server response time</li>
+                            <li class="success">Compression enabled</li>
+                            <li class="warning">Browser caching disaabled</li>
+                            <li class="success">Keep-alive enabled</li>
+                            <li class="success">Minimal redirects</li>
+                        </ul>
+                        
+                        <p class="list-header">Page:</p>
+                        <ul class="list-body">
+                            <li class="success">No bad requests</li>
+                            <li class="success">HTML minified</li>
+                            <li class="success">Request size is fine</li>
+                            <li class="success">Visible content prioritized</li>
+                            <li class="success">No render blocking CSS / JS</li>
+                        </ul>
+
+                        <p class="list-header">Resources:</p>
+                        <ul class="list-body">
+                            <li class="success">Images optimized</li>
+                            <li class="success">Javascripts seem async</li>
+                            <li class="success">CSS minified</li>
+                            <li class="success">No @import CSS</li>
+                            <li class="success">JS minified</li>
+                        </ul>
+
                         <p style="line-height: 1em"><small>Note: These values may change often if you display third party content (ads, widgets, etc.).</small></p>
                     </div>
                 </div>
@@ -111,29 +115,30 @@
                     </div>
                     <div class="card-body">
                         <div id="resources_imgs">
-                            <img src="images/resource-js-19.png">
+                            <img src="../dist/img/resource-js-19.png">
                             <br><br>
-                            <img style="width: 70%" src="images/resource-image-38.png">
+                            <img style="width: 70%" src="../dist/img/resource-image-38.png">
                             <br><br>
-                            <img src="images/resource-css-14.png">
+                            <img src="../dist/img/resource-css-14.png">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!--CSS delivery-->
         <div class="row">
             <div class="col-md-6">
-                <div class="card card-fail">
+                <div class="card card-warning resource">
                     <div class="card-header">
-                        <img src="images/check_brick_white.png">
+                        <img src="../dist/img/check_brick_white.png">
                         CSS delivery
                     </div>
                     <div class="card-body">
-                        <p class="h3">CSS size: 367 k</p>
-                        <p>External: 366958 / Internal: 0 / In attribute: 174</p>
+                        <p class="total-h1">CSS size: 367 k</p>
+                        <p class="total-p">External: 366958 / Internal: 0 / In attribute: 174</p>
                         <hr>
-                        <p><strong>14 External CSS files</strong></p>
+                        <p class="total-h2">14 External CSS files</p>
                         <small>
                             File size:
                             <span class="text-danger"> large</span>
@@ -142,7 +147,7 @@
                             <span class="text-danger"> X</span>
                         </small>
                         <!--Scroll Block-->
-                        <div class="scroll-block">
+                        <div class="scroll-block-img">
                             <div class="resource-block">
                                 <small>
                                     <strong>5a51b742f3291124f8ec</strong>
@@ -150,7 +155,7 @@
                                     47.086 kb
                                 </small>
                                 <br>
-                                <img src="images/css_block_medium.png">
+                                <span class="r-block-img-m"></span>
                             </div>
                             <div class="resource-block">
                                 <small>
@@ -159,7 +164,7 @@
                                     47.086 kb
                                 </small>
                                 <br>
-                                <img src="images/css_block_medium.png">
+                                <span class="r-block-img-m"></span>
                             </div>
                             <div class="resource-block">
                                 <small>
@@ -168,7 +173,7 @@
                                     47.086 kb
                                 </small>
                                 <br>
-                                <img src="images/css_block_small.png">
+                                <span class="r-block-img-s"></span>
                             </div>
                             <div class="resource-block">
                                 <small>
@@ -177,7 +182,7 @@
                                     47.086 kb
                                 </small>
                                 <br>
-                                <img src="images/css_block_medium.png">
+                                <span class="r-block-img-m"></span>
                             </div>
                             <div class="resource-block">
                                 <small>
@@ -186,7 +191,7 @@
                                     47.086 kb
                                 </small>
                                 <br>
-                                <img src="images/css_block_medium.png">
+                                <span class="r-block-img-m"></span>
                             </div>
                             <div class="resource-block">
                                 <small>
@@ -195,43 +200,34 @@
                                     47.086 kb
                                 </small>
                                 <br>
-                                <img src="images/css_block_medium.png">
+                                <span class="r-block-img-s"></span>
                             </div>
                         </div>
                         <br>
                         <hr>
                         <br>
-                        <p><strong>0 Render blocking CSS files</strong></p>
+                        <p class="total-h2">0 Render blocking CSS files</p>
                         <p>No render blocking CSS files found. Excellent.</p>
                         <br>
                         <hr>
                         <br>
-                        <p><strong>Notes:</strong></p>
-                        <p class="list-notes">
-                            <img class="mr-2" src="images/check_brick.png">
-                            <span class="text-warning">Total CSS size is too large</span>
-                            <br>
-                            <img class="mr-2" src="images/check_brick.png">
-                            <span class="text-warning">Too many external CSS files</span>
-                            <br>
-                            <img class="mr-2" src="images/check_ok.png">
-                            <span class="text-success">No render blocking CSS files</span>
-                            <br>
-                            <img class="mr-2" src="images/check_ok.png">
-                            <span class="text-success">No @import calls for CSS</span>
-                            <br>
-                            <img class="mr-2" src="images/check_brick.png">
-                            <span class="text-warning">In element CSS found</span>
-                            <br>
-                            <img class="mr-2" src="images/check_ok.png">
-                            <span class="text-success">CSS files are minimized</span>
-                        </p>
+
+                        <p class="total-h2">Notes:</p>
+                        <ul class="list-body">
+                            <li class="warning">Total CSS size is too large</li>
+                            <li class="warning">Too many external CSS files</li>
+                            <li class="success">No render blocking CSS files</li>
+                            <li class="success">No @import calls for CSS</li>
+                            <li class="success">In element CSS found</li>
+                        </ul>
+
                         <br>
                         <hr>
                         <br>
-                        <p><strong>External CSS location</strong></p>
-                        <div class="scroll-block">
-                            <p class="p-in-scroll">
+                        <p class="total-h2">External CSS location</p>
+                        <br>
+                        <div class="scroll-block-text">
+                            <p>
                                 https://www.avito.st/s/cc/styles/1f0a4f1b73213c2bbe45.css
                                 <br>
                                 <br>
@@ -268,18 +264,19 @@
                         <br>
                         <hr>
                         <br>
+
                         <!--Info block-->
                         <div class="row">
                             <div class="col-md-6 px-5">
                                 <p><strong>Internal CSS</strong></p>
-                                <div class="info-block">
-                                    Page has 0 blocks of inline CSS (0 bytes)
+                                <div class="scroll-block-text">
+                                    <p>Page has 0 blocks of inline CSS (0 bytes)</p>
                                 </div>
                             </div>
                             <div class="col-md-6 px-5">
                                 <p><strong>In element CSS</strong></p>
-                                <div class="info-block">
-                                    Page has 5 instances of in element CSS (174 bytes)
+                                <div class="scroll-block-text">
+                                    <p>Page has 5 instances of in element CSS (174 bytes)</p>
                                 </div>
                             </div>
                         </div>
@@ -294,102 +291,6 @@
                         </p>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Links block 1 -->
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h2 style="font-size: 260%; padding: .5em 0em;">Page speed performance</h2>
-                        <img style="vertical-align: top" src="images/me.png" width="24" height="24" alt="Patrick Sexten">
-                        <div id="___follow_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 131px; height: 24px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 131px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%" id="I0_1543133366396" name="I0_1543133366396" src="https://apis.google.com/_/widget/render/follow?usegapi=1&amp;annotation=bubble&amp;height=24&amp;rel=author&amp;origin=https%3A%2F%2Fvarvy.com&amp;url=https%3A%2F%2Fplus.google.com%2F115535413488555890288&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en_US.MDhkA3012xc.O%2Fam%3DwQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCPQxyoOxgFgwDqrTAIgwWqvW-QOgQ%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1543133366396&amp;_gfid=I0_1543133366396&amp;parent=https%3A%2F%2Fvarvy.com&amp;pfname=&amp;rpctoken=13488738" data-gapiattached="true"></iframe></div>
-                        <p><a href="#">by Patrick Sexton</a></p>
-                        <br>
-                        <p class="card-text">Make your pages faster. Common page speed issues and their solutions are discussed and illustrated by Patrick Sexton.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img class="card-img-top" src="images/render-blocking-css-new.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="#">Render blocking CSS</a></h5>
-                        <p class="card-text">CSS is render blocking and often can not be removed, so how is it optimized?</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img class="card-img-top" src="images/render-blocking-js-new.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="#">Render blocking javascript</a></h5>
-                        <p class="card-text">When javascript is keeping the page from loading as fast as it should, your users wait.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Links block 2 -->
-        <div class="row">
-
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img class="card-img-top" src="images/server-response-time.png" alt="clock">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="#">Reduce server response time</a></h5>
-                        <p class="card-text">Make sure your server is providing your pages quickly to the browser.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img class="card-img-top" src="images/enable-compression.png" alt="zipper">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="#">Enable Compression / Gzip</a></h5>
-                        <p class="card-text">Compressing with gzip helps speed up your pages and reduce bandwidth used.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img class="card-img-top" src="images/leverage-browser-caching.png">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="#">Leverage browser caching</a></h5>
-                        <p class="card-text">Help browsers "remember" your resources (logo,css, etc.) so it can load faster.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row mt-5 mb-5">
-            <div class="col-md-12">
-                <p style="text-align: center; font-size: 1.2em;">
-                    <a href="#">Home</a>
-                    |
-                    <a href="#">Pagespeed</a>
-                    |
-                    <a href="#">Mobile</a>
-                    |
-                    <a href="#">Tools</a>
-                    |
-                    <a href="#">About</a>
-                    |
-                    <a href="#">Privacy</a>
-                    |
-                    <a href="#">Site Map</a>
-                    <br>
-                    <small>
-                        Varvy.com is provided by <a href="#">Internet Marketing Ninjas</a>
-                        <br>
-                        Copyright © 2006-2017 Patrick Sexton, 2017 Internet Marketing Ninjas. All rights reserved.
-                    </small>
-                </p>
             </div>
         </div>
     </div>
