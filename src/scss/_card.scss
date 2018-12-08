@@ -57,6 +57,22 @@
             word-wrap: break-word;
         }
     }
+
+    .misc-block-1 {
+        a {
+            color: #2196F3;
+            position: relative;
+        }
+        a:after {
+            content: "";
+            background-image: url("../img/arrow-right.png");
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 2px;
+            right: -25px;
+        }
+    }
 }
   
 .card-primary {
@@ -127,4 +143,8 @@
             color: #FF6F00;
         }
     }
+}
+
+#resources_imgs img {
+    width: 100%;
 }

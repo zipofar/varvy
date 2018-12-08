@@ -1,6 +1,8 @@
 @import "variables";
-
 @import "./node_modules/bootstrap/scss/bootstrap";
+@import "card";
+@import "nav";
+@import "form";
 
 @media (max-width: map-get($grid-breakpoints, "md")) {
   .img-header-right {
@@ -11,10 +13,6 @@
   }
 }
 
-@import "card";
-@import "nav";
-@import "form";
-
 @keyframes right {
   0% {transform: translateX(300px)}
   100% {transform: translateX(0px)}
@@ -24,7 +22,7 @@
   animation-name: right;
   animation-duration: 0.5s;
 }
-
+/*
 a {
   text-decoration: underline;
   color: #0d47a1;
@@ -61,6 +59,4 @@ a {
   line-height: 1.5em;
 }
 
-#resources_imgs img {
-  width: 100%;
-}
+*/
