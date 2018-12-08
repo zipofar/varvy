@@ -11,6 +11,12 @@
     .total-h2 {
         font: {
             weight: bold;
+            size: 125%;
+        }
+    }
+    .total-h3 {
+        font: {
+            weight: bold;
             size: 100%;
         }
     }
@@ -65,12 +71,21 @@
             }
         }
 
-        .scroll-block-picture {
-            @extend .scroll-block;
-            background-color: white;
-            .resource-block {
-                padding: 15px 7px 15px 15px;
+    }
+
+    .scroll-block-picture {
+        @extend .scroll-block;
+        background-color: white;
+        .resource-block {
+            padding: 15px 7px 15px 15px;
+            small {
+                font-size: 80%;
             }
+            img {
+                height: 30px;
+                width: auto;
+            }
+        }
     }
 
     .scroll-block-text {
