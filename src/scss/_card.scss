@@ -30,6 +30,55 @@
         line-height: 1;
     }
 
+    $chkList-icon-url-success: "../img/check_ok.png";
+    $chkList-icon-url-warning: "../img/check_brick.png";
+    $chkLists-line-height: (
+        low: 1,
+        high: 1.5
+    );
+    $chkLists-themes: (
+        colored: (
+            success: (
+                url-image: $chkList-icon-url-success,
+                color: $green
+            ),
+            warning: (
+                url-image: $chkList-icon-url-warning,
+                color: $orange
+            )
+        ),
+        mono: (
+            success: (
+                url-image: $chkList-icon-url-success,
+                color: black
+            ),
+            warning: (
+                url-image: $chkList-icon-url-warning,
+                color: black
+            )
+        ),
+    );
+
+    %checkList {
+        list-style-type: none;
+        padding-left: 1.3em;
+    }
+
+    @each $h-key, $h-val in $chkLists-line-height {
+        @each $theme-name, $theme in $chkLists-themes {
+            .checkList-#{$theme-name}-#{$h-key} {
+                @extend %checkList;
+                line-height: $h-val;
+                @each $mode-name, $options in $theme {
+                    .#{$mode-name} {
+                        list-style-image: url(map-get($options, "url-image"));
+                        color: map-get($options, "color");
+                    }
+                }
+            }
+        }
+    }
+
     .scroll-block {
         background-color: #f5f5f5;
         max-height: 250px;
@@ -152,17 +201,6 @@
         color: #404040;
         margin: 1em 0em;
     }
-    .list-body {
-        line-height: 1;
-        list-style-type: none;
-        padding-left: 1.3em;
-        .success {
-            list-style-image: url("../img/check_ok.png");
-        }
-        .warning {
-            list-style-image: url("../img/check_brick.png");
-        }
-    }
 }
 
 .resource {
@@ -173,19 +211,6 @@
         }
         color: #404040;
         margin: 1em 0em;
-    }
-    .list-body {
-        line-height: 1.5;
-        list-style-type: none;
-        padding-left: 1.3em;
-        .success {
-            list-style-image: url("../img/check_ok.png");
-            color: #4CAF50;
-        }
-        .warning {
-            list-style-image: url("../img/check_brick.png");
-            color: #FF6F00;
-        }
     }
 }
 

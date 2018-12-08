@@ -4,6 +4,9 @@ $border-radius:                 0px;
 $input-btn-padding-y:           0.4rem;
 $input-btn-padding-x:           1rem;
 $blue:                          #2196F3;
+$green:                         #4CAF50;
+$yellow:                        #FFC107;
+$orange:                        #FF6F00;
 
 //Fonts
 $font-size-base:                1.1rem;
@@ -12,5 +15,5 @@ $font-family-base:              'v', sans-serif;
 
 // Card
 $card-header-color-primary: $blue;
-$card-header-color-success: #4CAF50;
-$card-header-color-warning: #FFC107;
+$card-header-color-success: $green;
+$card-header-color-warning: $yellow
