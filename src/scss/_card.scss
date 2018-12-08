@@ -64,6 +64,13 @@
                 background-image: url("../img/js_block_large.png");
             }
         }
+
+        .scroll-block-picture {
+            @extend .scroll-block;
+            background-color: white;
+            .resource-block {
+                padding: 15px 7px 15px 15px;
+            }
     }
 
     .scroll-block-text {
