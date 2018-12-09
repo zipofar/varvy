@@ -94,7 +94,7 @@
                             <li class="success">JS minified</li>
                         </ul>
 
-                        <p style="line-height: 1em"><small>Note: These values may change often if you display third party content (ads, widgets, etc.).</small></p>
+                        <p class="mini-notes"><small>Note: These values may change often if you display third party content (ads, widgets, etc.).</small></p>
                     </div>
                 </div>
             </div>
@@ -478,15 +478,112 @@
                         </div>
                         <div class="card-body">
                             <p class="total-h2">All resources leverage browser caching.</p>
+                            <ul class="checkList-colored-high">
+                                <li class="success">Enabled for local resources</li>
+                                <li class="success">Enabled for third party resources</li>
+                            </ul>
+                            <p>Local resources:</p>
+                            <div class="scroll-block-text">
+                                <p class="mini-notes"><small>Resources served from origin domain are cached.</small></p>
+                            </div>
+                            <p>Third party resources:</p>
+                            <div class="scroll-block-text">
+                                <p class="mini-notes"><small>No third party caching errors.</small></p>
+                            </div>
+                            <br>
+                            <div class="misc-block-1">
+                                <a href="#">Leverage browser caching</a>
+                            </div>
                         </div>
-                        <ul class="check-list">
+                    </div>
+            </div>
+            <!--Browser caching END-->            
+        </div>
+        <div class="row">
+            <!--Keep-Alive BEGIN-->
+            <div class="col-md-4">
+                <div class="card card-success resource">
+                    <div class="card-header">
+                        <img src="../dist/img/check_ok_white.png">
+                        Keep-Alive
+                    </div>
+                    <div class="card-body">
+                        <p class="total-h2">Keep Alive enabled for all requests.</p>
+                        <ul class="checkList-colored-high">
                             <li class="success">Enabled for local resources</li>
                             <li class="success">Enabled for third party resources</li>
                         </ul>
                         <p>Local resources:</p>
+                        <div class="scroll-block-text">
+                            <p class="mini-notes"><small>Resources served from origin domain have keep-alive enabled.</small></p>
+                        </div>
+                        <p>Third party resources:</p>
+                        <div class="scroll-block-text">
+                            <p class="mini-notes"><small>No third party keep-alive issues found.</small></p>
+                        </div>
+                        <br>
+                        <div class="misc-block-1">
+                            <a href="#">Enable Keep-Alive</a>
+                        </div>
                     </div>
                 </div>
-                <!--Browser caching END-->            
+            </div>
+            <!--Keep-Alive END-->
+            <!--Enable compression BEGIN-->
+            <div class="col-md-4">
+                <div class="card card-success resource">
+                    <div class="card-header">
+                        <img src="../dist/img/check_ok_white.png">
+                        Enable compression
+                    </div>
+                    <div class="card-body">
+                        <p class="total-h2">Compression is enabled for all resources.</p>
+                        <ul class="checkList-colored-high">
+                            <li class="success">Enabled for local resources</li>
+                            <li class="success">Enabled for third party resources</li>
+                        </ul>
+                        <p>Local resources:</p>
+                        <div class="scroll-block-text">
+                            <p class="mini-notes"><small>No compression errors found for resources served from origin domain.</small></p>
+                        </div>
+                        <p>Third party resources:</p>
+                        <div class="scroll-block-text">
+                            <p class="mini-notes"><small>No third party compression errors.</small></p>
+                        </div>
+                        <br>
+                        <div class="misc-block-1">
+                            <a href="#">Enable compression</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Enable compression END-->
+            <!--Server response time BEGIN-->
+            <div class="col-md-4">
+                <div class="card card-success resource">
+                    <div class="card-header">
+                        <img src="../dist/img/check_ok_white.png">
+                        Server response time
+                    </div>
+                    <div class="card-body">
+                        <p class="total-h2">Server responded in less than 200 milliseconds</p>
+                        <ul class="checkList-colored-high">
+                            <li class="success">Quick server response time</li>
+                        </ul>
+                        <p class="mini-notes"><small>Google recommends a server response time of less than 200 milliseconds.</small></p>
+                        <div class="misc-block-1">
+                            <a href="#">Server response time</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Server response time END-->
+        </div>
+        <div class="row">
+            <div class="col">
+                <br>
+                <p>Thanks for using this tool.</p>
+            </div>
         </div>
     </div>
 
