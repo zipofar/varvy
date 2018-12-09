@@ -19,7 +19,7 @@ module.exports = {
     },
     output: {
         filename: 'js/[name].js',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'public'),
         publicPath: '../',
     },
     devtool: (isProduction) ? '' : 'inline-source-map',
@@ -32,7 +32,7 @@ module.exports = {
         new MiniCssExtractPlugin({
           filename: "css/[name].css",
         }),
-        new CleanWebpackPlugin(['dist']),
+        new CleanWebpackPlugin(['public']),
         new CopyWebpackPlugin(
             [
                 { from: './img', to: 'img' }
