@@ -1,2 +1,7 @@
+# Template Web Page
+
+### Demo
 https://whispering-badlands-35674.herokuapp.com/
-https://git.heroku.com/whispering-badlands-35674.git
+
+### Screen
+![Alt text](/screenshot.png?raw=true "Screen")
