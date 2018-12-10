@@ -184,6 +184,8 @@
     .card-header {
         background-color: $card-header-color-success;
         border: 0;
+        position: relative;
+        padding-left: 50px;
     }
 }
 
@@ -191,6 +193,8 @@
     .card-header {
         background-color: $card-header-color-warning;
         border: 0;
+        position: relative;
+        padding-left: 50px;
     }
 }
 
@@ -203,3 +207,22 @@
 #resources_imgs img {
     width: 100%;
 }
+
+%i-card-header {
+    display: inline-block;
+    top: 7px;
+    left: 15px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+  }
+  .i-warning {
+    @extend %i-card-header;
+    background-image: url("../img/check_brick_white.png");
+  }
+  
+  .i-success {
+    @extend %i-card-header;
+    background-image: url("../img/check_ok_white.png");
+  }
