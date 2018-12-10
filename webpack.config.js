@@ -67,14 +67,13 @@ module.exports = {
             //Images
             {
                 test: /\.(png|gif|jpg)$/,
-                loaders: [
-                    {
-                        loader: 'file-loader',
+                use: [
+                     {
+                        loader: 'url-loader',
                         options: {
-                            name: '[path][name].[ext]',
+                          limit: 8192,
                         }
                     },
-                    'img-loader',
                 ],
             },
             //Fonts
