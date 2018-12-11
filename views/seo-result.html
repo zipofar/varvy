@@ -14,7 +14,8 @@
     </style>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/css/app.css">
-    <title>Home</title>
+
+    <title>Pagespeed</title>
 </head>
 <body>
 
@@ -26,7 +27,7 @@
         <div class="navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">seo</a>
+                    <a class="nav-link" href="/seo">seo</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/pagespeed">speed</a>
@@ -42,9 +43,9 @@
 
         <div class="row">
             <div class="col-md-4 col-sm-12">
-                <h1 class="h1-header">Page speed optimization</h1>
+                <h1 class="h1-header">SEO tool</h1>
                 <!-- Search form -->
-                <form class="form-inline form-search">
+                <form class="form-inline form-search" action="/seo-result">
                     <div class="form-row w-100">
                         <div class="col-8">
                             <input style="width:100%" type="text" class="form-control" id="inputUrl" placeholder="Enter web page url">
@@ -54,90 +55,207 @@
                         </div>
                     </div>
                 </form>
-                <p><small>Updated: June 20th 2016</small></p>
-            </div>
-            <!--Anim right image-->
-            <div class="col-md-8">
-                <div class="img-header-right">
-                    <img style="width:100%" class="anim-right" src="/img/page-speed-tool-results.png">
-                </div>
             </div>
         </div>
 
-        <!-- Advertising -->
-        <div class="row mb-5 ads">
-            <hr class="col-md-12">
-            <img class="m-auto p-4" src="/img/adv_01.gif">
-            <hr class="col-md-12">
-        </div>
-
-        <!-- Links block 1 -->
+        <!--START ROW-->
         <div class="row">
+            <!--Googlebot access BEGIN-->
             <div class="col-md-4">
-                <div class="card card-ads">
+                <div class="card card-success">
+                    <div class="card-header">
+                        <i class="i-success"></i>
+                        Googlebot access
+                    </div>
                     <div class="card-body">
-                        <h2 style="font-size: 220%; padding: .5em 0em;">Page speed performance</h2>
-                        <img style="vertical-align: top" src="/img/me.png" width="24" height="24" alt="Patrick Sexten">
-                        <div id="___follow_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 131px; height: 24px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 131px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%" id="I0_1543133366396" name="I0_1543133366396" src="https://apis.google.com/_/widget/render/follow?usegapi=1&amp;annotation=bubble&amp;height=24&amp;rel=author&amp;origin=https%3A%2F%2Fvarvy.com&amp;url=https%3A%2F%2Fplus.google.com%2F115535413488555890288&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en_US.MDhkA3012xc.O%2Fam%3DwQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCPQxyoOxgFgwDqrTAIgwWqvW-QOgQ%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1543133366396&amp;_gfid=I0_1543133366396&amp;parent=https%3A%2F%2Fvarvy.com&amp;pfname=&amp;rpctoken=13488738" data-gapiattached="true"></iframe></div>
-                        <p><a href="#">by Patrick Sexton</a></p>
+                        <p class="total-h2">Resources not blocked by robots.txt</p>
+                        <ul class="checkList-colored-low">
+                            <li class="success">All CSS and javascript files seem visible to Googlebot</li>
+                        </ul>
+                        <p class="p-sm">Page resources:</p>
+                        <div class="scroll-block-text-dark">
+                            <p class="mini-notes">
+                                <small>
+                                    <strong>CSS files:</strong>
+                                    <br>
+                                    - css.php?t=dokuwiki&tse... 
+                                    <br>
+                                    <br>
+                                    <strong>Javascript files:</strong>
+                                    <br>
+                                    - jquery.php?tseed=23f88...
+                                    <br>
+                                    - js.php?t=dokuwiki&tsee... 
+                                </small>
+                            </p>
+                        </div>
+                        <p class="p-sm">Guideline states: 'allow all site assets that would significantly affect page rendering to be crawled: for example, CSS and JavaScript files that affect the understanding of the pages.'</p>
+                        
+                        <div class="misc-block-1">
+                            <a href="#">Learn about blocked resources</a>
+                        </div>
                         <br>
-                        <p class="card-text">Make your pages faster. Common page speed issues and their solutions are discussed and illustrated by Patrick Sexton.</p>
                     </div>
                 </div>
             </div>
-
+            <!--Googlebot access END-->
+            <!--Mobile Devices BEGIN-->
             <div class="col-md-4">
-                <div class="card card-ads">
-                    <img class="card-img-top" src="/img/render-blocking-css-new.png" alt="Card image cap">
+                <div class="card card-success">
+                    <div class="card-header">
+                        <i class="i-success"></i>
+                        Mobile Devices
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title"><a href="#">Render blocking CSS</a></h5>
-                        <p class="card-text">CSS is render blocking and often can not be removed, so how is it optimized?</p>
+                        <p class="total-h2">Page seems to display well on mobile devices.</p>
+                        <img src="/img/pictures/mobile_screen_site.jpg" id="mobile-screen">
+                        <ul class="checkList-colored-low">
+                            <li class="success">Text is legible</li>
+                            <li class="success">Viewport configured</li>
+                            <li class="warning">Tap targets are small</li>
+                            <li class="success">Content fits inside viewport</li>
+                            <li class="success">No plugins found</li>
+                            <li class="success">No blocking interstitials</li>
+                        </ul>
+                        <p class="p-sm">Guideline states: 'Design your site for all device types and sizes, including desktops, tablets, and smartphones.'</p>
+                        <div class="misc-block-1">
+                            <a href="#">Learn about mobile SEO</a>
+                        </div>
+                        <br>
                     </div>
                 </div>
             </div>
-
+            <!--Mobile Devices END-->
+            <!--Security BEGIN-->
             <div class="col-md-4">
-                <div class="card card-ads">
-                    <img class="card-img-top" src="/img/render-blocking-js-new.png" alt="Card image cap">
+                <div class="card card-success">
+                    <div class="card-header">
+                        <i class="i-success"></i>
+                        Server response time
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title"><a href="#">Render blocking javascript</a></h5>
-                        <p class="card-text">When javascript is keeping the page from loading as fast as it should, your users wait.</p>
+                        <p class="total-h2">Page is secured with HTTPS.</p>
+                        <ul class="checkList-colored-low">
+                            <li class="success">Page defaults to HTTPS</li>
+                        </ul>
+                        <p class="p-sm">SSL certificate details:</p>
+                        <div class="block-cert">
+                            <p>
+                                <strong>Let's Encrypt</strong>
+                                <br>
+                                <small>
+                                Let's Encrypt Authority X3
+                                <br>
+                                Type: RSA-SHA256
+                                </small>
+                            </p>
+                            <p><strong>Expires: 07 February 2019</strong></p>
+                            <br>
+                        </div>
+                        <p class="p-sm">Guideline states: 'If possible, secure your site's connections with HTTPS. Encrypting interactions between the user and your website is a good practice for communication on the web.'</p>
+                        <div class="misc-block-1">
+                            <a href="#">Server response time</a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!--Security END-->
         </div>
+        <!--END ROW-->
 
-        <!-- Links block 2 -->
+        <!--START ROW-->
         <div class="row">
-
+            <!--Accessibility BEGIN-->
             <div class="col-md-4">
-                <div class="card card-ads">
-                    <img class="card-img-top" src="/img/server-response-time.png" alt="clock">
+                <div class="card card-warning">
+                    <div class="card-header">
+                        <i class="i-warning"></i>
+                        Accessibility
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title"><a href="#">Reduce server response time</a></h5>
-                        <p class="card-text">Make sure your server is providing your pages quickly to the browser.</p>
+                        <p class="total-h2">Accessibility issues found. Not screen reader friendly.</p>
+                        <ul class="checkList-colored-low">
+                            <li class="success">Language declared ideally.</li>
+                            <li class="success">Skip to main content link found.</li>
+                            <li class="warning">Alt text missing.</li>
+                            <li class="warning">Empty alt links found.</li>
+                            <li class="success">HTML is valid.</li>
+                        </ul>
+                        <img style="float: left; margin-right: .5em; width: 30px; height: auto;" src="/img/i_round-i.png">
+                        <p style="line-height: 1">Screen reader usability should be tested further by a human. Tools are unable to detect all screen reader issues.</p>
+                        <p class="p-sm">Guideline states: 'Ensure that your pages are useful for readers with visual impairments, for example, by testing usability with a screen-reader.'</p>
+                        
+                        <div class="misc-block-1">
+                            <a href="#">Screen-reader testing tips</a>
+                        </div>
+                        <br>
                     </div>
                 </div>
             </div>
-
+            <!--Accessibility END-->
+            
+            <!--Page speed BEGIN-->
             <div class="col-md-4">
-                <div class="card card-ads">
-                    <img class="card-img-top" src="/img/enable-compression.png" alt="zipper">
+                <div class="card card-warning">
+                    <div class="card-header">
+                        <i class="i-warning"></i>
+                        Page speed
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title"><a href="#">Enable Compression / Gzip</a></h5>
-                        <p class="card-text">Compressing with gzip helps speed up your pages and reduce bandwidth used.</p>
+                        <p class="total-h2">Page speed issues found.</p>
+                        <ul class="checkList-colored-low">
+                            <li class="success">Browser caching enabled</li>
+                            <li class="success">Minimal redirects</li>
+                            <li class="warning">Render blocking CSS and/or JS</li>
+                            <li class="warning">Compression not enabled</li>
+                            <li class="success">CSS minified</li>
+                            <li class="warning">HTML not minimized</li>
+                            <li class="success">JS minified</li>
+                            <li class="warning">Images not optimized</li>
+                            <li class="success">Visible content prioritized</li>
+                            <li class="success">Quick server response time</li>
+                        </ul>
+                        <p class="p-sm">Guideline states: 'Optimize your page loading times. Fast sites make users happy and improve the overall quality of the web (especially for those users with slow Internet connections).'</p>
+                        
+                        <div class="misc-block-1">
+                            <a href="#">Speed issues and solutions</a>
+                        </div>
+                        <br>
                     </div>
                 </div>
             </div>
+            <!--Page speed END-->
 
+            <!--Robots.txt guideline BEGIN-->
             <div class="col-md-4">
-                <div class="card card-ads">
-                    <img class="card-img-top" src="/img/leverage-browser-caching.png">
+                <div class="card card-warning">
+                    <div class="card-header">
+                        <i class="i-warning"></i>
+                        Robots.txt guideline
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title"><a href="#">Leverage browser caching</a></h5>
-                        <p class="card-text">Help browsers "remember" your resources (logo,css, etc.) so it can load faster.</p>
+                        <p class="total-h2">No robots.txt file found.</p>
+                        <ul class="checkList-colored-low">
+                            <li class="warning">While not required, a robots.txt file may help you follow certain guidelines.</li>
+                        </ul>
+                        <p class="p-sm">Guideline states: 'Use the robots.txt file on your web server to manage your crawling budget...'</p>
+                        
+                        <div class="misc-block-1">
+                            <a href="#">Learn about robots.txt</a>
+                        </div>
+                        <br>
                     </div>
                 </div>
+            </div>
+            <!--Robots.txt guideline END-->
+
+        </div>
+        <!--END ROW-->        
+
+        <div class="row">
+            <div class="col">
+                <br>
+                <p>Thanks for using this tool.</p>
             </div>
         </div>
 
