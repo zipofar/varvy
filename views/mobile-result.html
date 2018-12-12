@@ -14,7 +14,8 @@
     </style>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/css/app.css">
-    <title>SEO tool</title>
+
+    <title>Pagespeed</title>
 </head>
 <body>
 
@@ -54,60 +55,178 @@
                         </div>
                     </div>
                 </form>
-                <p><small>See how well a page follows the Google guidelines.</small></p>
-            </div>
-            <!--Anim right image-->
-            <div class="col-md-8">
-                <div class="img-header-right">
-                    <img style="width:100%" class="anim-right" src="/img/seo-tool-results.png">
-                </div>
             </div>
         </div>
 
-        <!-- Advertising -->
-        <div class="row mb-5 ads">
-            <hr class="col-md-12">
-            <img class="m-auto p-4" src="/img/adv_01.gif">
-            <hr class="col-md-12">
-        </div>
-
-        <!-- Links block 1 -->
+        <!--START ROW-->
         <div class="row">
-            <div class="col-md-4">
-                <div class="card card-ads">
+            <!--Left block BEGIN-->
+            <div class="col-md-12 col-lg-3 px-4_5">
+
+                <div class="card card-success">
+                    <div class="card-header">
+                        <i class="i-success"></i>
+                        Mobile friendly
+                    </div>
                     <div class="card-body">
-                        <h2 style="font-size: 220%; padding: .5em 0em;">The Google guidelines</h2>
-                        <img style="vertical-align: top" src="/img/me.png" width="24" height="24" alt="Patrick Sexten">
-                        <div id="___follow_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 131px; height: 24px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 131px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%" id="I0_1543133366396" name="I0_1543133366396" src="https://apis.google.com/_/widget/render/follow?usegapi=1&amp;annotation=bubble&amp;height=24&amp;rel=author&amp;origin=https%3A%2F%2Fvarvy.com&amp;url=https%3A%2F%2Fplus.google.com%2F115535413488555890288&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en_US.MDhkA3012xc.O%2Fam%3DwQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCPQxyoOxgFgwDqrTAIgwWqvW-QOgQ%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1543133366396&amp;_gfid=I0_1543133366396&amp;parent=https%3A%2F%2Fvarvy.com&amp;pfname=&amp;rpctoken=13488738" data-gapiattached="true"></iframe></div>
-                        <p><a href="#">by Patrick Sexton</a></p>
+                        <div class="scores">
+                            <p>88<small> / 100</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-success">
+                    <div class="card-header">
+                        <i class="i-success"></i>
+                        Google access
+                    </div>
+                    <div class="card-body">
+                        <div class="scores">
+                            <p>YES</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Left block END-->
+
+            <!--Middle block BEGIN-->
+            <div class="col-md-12 col-lg-3 px-4_5">
+
+                <div class="card card-warning">
+                    <div class="card-header">
+                        <i class="i-warning"></i>
+                        Mobile speed
+                    </div>
+                    <div class="card-body">
+                        <div class="scores">
+                            <p>51<small> / 100</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-warning">
+                    <div class="card-header">
+                        <i class="i-warning"></i>
+                        Page redirects
+                    </div>
+                    <div class="card-body">
+                        <div class="scores">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--Middle block END-->
+
+            <!--Right block BEGIN-->
+            <div class="col-md-6">
+                <div class="iphone">
+                    <div class="sleep"></div>
+                    <div class="left-btn"></div>
+                    <div class="camera"></div>
+                </div>
+            </div>
+            <!--Right block END-->
+        </div>
+        <!--END ROW-->
+
+        <!--START ROW-->
+        <div class="row">
+            <!--Accessibility BEGIN-->
+            <div class="col-md-4">
+                <div class="card card-warning">
+                    <div class="card-header">
+                        <i class="i-warning"></i>
+                        Accessibility
+                    </div>
+                    <div class="card-body">
+                        <p class="total-h2">Accessibility issues found. Not screen reader friendly.</p>
+                        <ul class="checkList-colored-low">
+                            <li class="success">Language declared ideally.</li>
+                            <li class="success">Skip to main content link found.</li>
+                            <li class="warning">Alt text missing.</li>
+                            <li class="warning">Empty alt links found.</li>
+                            <li class="success">HTML is valid.</li>
+                        </ul>
+                        <img style="float: left; margin-right: .5em; width: 30px; height: auto;" src="/img/i_round-i.png">
+                        <p style="line-height: 1">Screen reader usability should be tested further by a human. Tools are unable to detect all screen reader issues.</p>
+                        <p class="p-sm">Guideline states: 'Ensure that your pages are useful for readers with visual impairments, for example, by testing usability with a screen-reader.'</p>
+                        
+                        <div class="misc-block-1">
+                            <a href="#">Screen-reader testing tips</a>
+                        </div>
                         <br>
-                        <p class="card-text">The Google webmaster guidelines are a set of suggested practices provided by Google. The most basic step of SEO is to follow them. The tool above checks to see if a webpage is following them and the articles on this page explain the guidelines one by one.</p>
                     </div>
                 </div>
             </div>
-
+            <!--Accessibility END-->
+            
+            <!--Page speed BEGIN-->
             <div class="col-md-4">
-                <div class="card card-ads">
-                    <img class="card-img-top" src="/img/googlebot3.png" alt="Card image cap">
+                <div class="card card-warning">
+                    <div class="card-header">
+                        <i class="i-warning"></i>
+                        Page speed
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title"><a href="#">What is Googlebot?</a></h5>
-                        <p class="card-text">Googlebot is the webcrawler used by Google to discover web pages and update their search index.</p>
+                        <p class="total-h2">Page speed issues found.</p>
+                        <ul class="checkList-colored-low">
+                            <li class="success">Browser caching enabled</li>
+                            <li class="success">Minimal redirects</li>
+                            <li class="warning">Render blocking CSS and/or JS</li>
+                            <li class="warning">Compression not enabled</li>
+                            <li class="success">CSS minified</li>
+                            <li class="warning">HTML not minimized</li>
+                            <li class="success">JS minified</li>
+                            <li class="warning">Images not optimized</li>
+                            <li class="success">Visible content prioritized</li>
+                            <li class="success">Quick server response time</li>
+                        </ul>
+                        <p class="p-sm">Guideline states: 'Optimize your page loading times. Fast sites make users happy and improve the overall quality of the web (especially for those users with slow Internet connections).'</p>
+                        
+                        <div class="misc-block-1">
+                            <a href="#">Speed issues and solutions</a>
+                        </div>
+                        <br>
                     </div>
                 </div>
             </div>
+            <!--Page speed END-->
 
+            <!--Robots.txt guideline BEGIN-->
             <div class="col-md-4">
-                <div class="card card-ads">
-                    <img class="card-img-top" src="/img/robotstxt.png" alt="Card image cap">
+                <div class="card card-warning">
+                    <div class="card-header">
+                        <i class="i-warning"></i>
+                        Robots.txt guideline
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title"><a href="#">The robots.txt file</a></h5>
-                        <p class="card-text">The content of your robots.txt file tells search engine crawlers how they should visit your site. Don't block Google by mistake.</p>
+                        <p class="total-h2">No robots.txt file found.</p>
+                        <ul class="checkList-colored-low">
+                            <li class="warning">While not required, a robots.txt file may help you follow certain guidelines.</li>
+                        </ul>
+                        <p class="p-sm">Guideline states: 'Use the robots.txt file on your web server to manage your crawling budget...'</p>
+                        
+                        <div class="misc-block-1">
+                            <a href="#">Learn about robots.txt</a>
+                        </div>
+                        <br>
                     </div>
                 </div>
+            </div>
+            <!--Robots.txt guideline END-->
+
+        </div>
+        <!--END ROW-->        
+
+        <div class="row">
+            <div class="col">
+                <br>
+                <p>Thanks for using this tool.</p>
             </div>
         </div>
 
-        
         <div class="row mt-5 mb-5">
             <div class="col-md-12 footer">
                 <ul class="menu">

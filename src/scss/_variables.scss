@@ -17,4 +17,10 @@ $font-family-base:              'v', sans-serif;
 // Card
 $card-header-color-primary: $blue;
 $card-header-color-success: $green;
-$card-header-color-warning: $yellow
+$card-header-color-warning: $yellow;
+
+$spacer: 1rem !default;
+$spacers: (
+    4_5: ($spacer * 2.2),
+    6: ($spacer * 5)
+) !default;

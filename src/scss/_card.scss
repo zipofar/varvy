@@ -188,6 +188,19 @@
     }
 }
   
+%scores {
+    padding: 1em;
+    p {
+        text-align: center;
+        margin: .4em 0;
+        font-size: 260%;
+        small {
+            font-size: 40%;
+            color: $gray-600;
+        }
+    }
+}
+
 .card-primary {
     .card-header {
         background-color: $card-header-color-primary;
@@ -202,6 +215,12 @@
         position: relative;
         padding-left: 50px;
     }
+    .scores {
+        @extend %scores;
+        p {
+            color: $card-header-color-success;
+        }
+    }
 }
 
 .card-warning {
@@ -210,6 +229,12 @@
         border: 0;
         position: relative;
         padding-left: 50px;
+    }
+    .scores {
+        @extend %scores;
+        p {
+            color: $card-header-color-warning;
+        }
     }
 }
 

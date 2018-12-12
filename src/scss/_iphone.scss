@@ -1,0 +1,53 @@
+$iphone-btn-color: green;
+
+.iphone {
+    width:320px;
+    height: 568px;
+    background-color: gray;
+    border-radius: 40px;
+    border: 2px solid red;
+    margin: auto;
+    position: relative;
+
+    .sleep {
+        width: 60px;
+        height: 4px;
+        right: 60px;
+        top: -4px;
+        position: absolute;
+        background-color: $iphone-btn-color;
+    }
+
+    %left-btn {
+        width: 4px;
+        height: 50px;
+        position: absolute;
+        background-color: $iphone-btn-color;
+    }
+
+    .left-btn {
+        @extend %left-btn;
+        top: 200px;
+        left: -4px;
+        &::before {
+            @extend %left-btn;
+            top: 100px;
+            content: "";
+        }
+        &::after {
+            @extend %left-btn;
+            top: -100px;
+            content: "";
+        }
+    }
+
+    .camera {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: #3c3d3d;
+        position: absolute;
+        top: 50px;
+        left: 200px;
+    }
+}

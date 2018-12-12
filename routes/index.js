@@ -22,4 +22,12 @@ router.get('/seo-result', function(req, res, next) {
   res.render('seo-result');
 });
 
+router.get('/mobile', function(req, res, next) {
+  res.render('mobile');
+});
+
+router.get('/mobile-result', function(req, res, next) {
+  res.render('mobile-result');
+});
+
 module.exports = router;
