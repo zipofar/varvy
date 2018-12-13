@@ -28,6 +28,19 @@
 
     .mini-notes {
         line-height: 1;
+        %mini-check {
+            height: 15px;
+            width: 15px;
+            display: inline-block;
+        }
+        .mini-success {
+            @extend %mini-check;
+            background-image: url("../img/check_ok.png");
+        }
+        .mini-warning {
+            @extend %mini-check;
+            background-image: url("../img/check_brick.png");
+        }
     }
 
     $chkList-icon-url-success: "../img/check_ok.png";
@@ -186,6 +199,25 @@
         margin: 1em 0em;
         color: $p-dark;
     }
+
+    .redirects {
+        p {
+            line-height: .7em;
+        }
+        %mini-arrow {
+            height: 15px;
+            width: 15px;
+            display: inline-block;
+        }
+        .arrow-top-right {
+            @extend %mini-arrow;
+            background-image: url("../img/arrow-top-right.png");
+        }
+        .arrow-left-down {
+            @extend %mini-arrow;
+            background-image: url("../img/arrow-left-down.png");
+        }
+    }
 }
   
 %scores {
@@ -205,6 +237,12 @@
     .card-header {
         background-color: $card-header-color-primary;
         border: 0;
+    }
+    .scores {
+        @extend %scores;
+        p {
+            color: $gray-800;
+        }
     }
 }
 
@@ -235,6 +273,14 @@
         p {
             color: $card-header-color-warning;
         }
+    }
+}
+
+.scores.scores-lft {
+    padding: 0;
+    p {
+        font-size: 220%;
+        text-align: left;
     }
 }
 
